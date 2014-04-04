@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs24 \cf0 Meeting @ 25/03\
+\
+
+\b0 Looked into making it web based using the D3js tool for showing graphs/visualising the data in an aesthetic way to the user\
+\
+Swinging towards using javascript as D3js tool is in javascript so it makes sense to code it in the one language.\
+\
+Planning on having multiple users on program at once so MySQL > SQLlite.\
+\
+Github has been setup\
+\
+Work action items for people\
+	- Feasibility Study = Jamie, Kurt\
+	- SRS = Peter, Kurt\
+	- Detail Plan = Willie, JB\
+	\
+\
+Peter on front end\
+\
+Back end decide on language that is easy to learn.\
+Such as Ruby, PHP, JS, EngineX. They can all talk to the database through MySQL\
+\
+Back end split in 3 parts\
+Data analysis, map, something\
+\
+Look at PHP and Ruby and see what we like to write in.\
+\
+\
+How many people?\
+Multiple = concurrent\
+\
+Technical level of users\
+Click button do something, easy aesthetic\
+\
+How often update?\
+Get data once, thats all we need. No new bugs etc\
+After we connect, no new data\
+\
+Security requirements?\
+Needs password with logins with permissions, different levels. admin/security/user etc\
+\
+}
