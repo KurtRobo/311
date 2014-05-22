@@ -1,0 +1,85 @@
+Objectives
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Optimus Software will be regarded as a success if...
+
+1 The software is capable of retrieving the Python SVN data to store within a database
+	Specific			To allow the program to access to the locally stored data
+	Measurable			To reduce the time it takes to load the data and avoiding constant connection to the SVN to find data.
+	Achievable			We have the tools and skills required to construct this functionality
+	Relevant			Yes, the client specifies importing data as a requirement and is relevant for our software to be a success
+	Time Constrained	This should be completed within the first couple of weeks of development so we have time to implement other functionalities (27th April)
+
+	"Import Python SVN data into a database by the 27th of April in order to speed up the way Optimus accesses the relevant data as it is stored locally rather than the SVN"
+
+	To complete this requires...
+
+	1.1 Setup database
+	1.2 Develop web scraper to find information within emails and bugs
+	1.3 Implement scraper in final software to enable data import to DB
+
+
+
+2 The user can log in to the system and view relevant data relating to their profile
+	Specific			Give the user a better experience with the software as the data is personalised on the user logged in
+	Measurable			To increase the number of people using the software as are left with a good experience
+	Achievable			It is achievable to construct a log in system and user profiles
+	Relevant			Yes, the client wishes to have data relating to the current user easily accessible
+	Time Constrained	This should be achieved after data has been imported and to take about a week to implement (5th May)
+
+	Relevant data = Show mail, show activity, show outstanding
+
+	To complete this requries... (assuming data has been imported, put as a pre-requisite)
+
+	2.1 User having Optimus account
+	2.2 Query specific data based on the logged in user
+		2.2.1 Analyse user and calculate source code contribution
+	2.3 Return data from DB showing user related data
+
+
+
+3 The user can view visualisations of bug reports and mail logs from the data stored in the database
+	Specific			To allow simple, clean and aesthetic viewing of meaningful data that the user queries
+	Measurable			To encourage further use of Optimus as it is simple and visually aesthetic whilst providing the information needed
+	Achievable			It is achievable to create graphs and such to visualise the requested data by the user as we have the tools, skills and time required
+	Relevant			Visualising the data to the user is an integral part of what Optimus' purpose is
+	Time Constrained	Completed by the 15th of May
+
+	Visualisations = wordcloud, graphs
+
+	To complete this requries... (assuming data has been imported, put as a prerequisite)
+
+	3.1 User Query to data that user is requesting
+	3.2 Optimus accesses data from DB
+	3.3 Optimus converts that data into graphs
+		3.3.1 Implement a visualisation tool to show graphs
+
+
+
+4 The user can view statistics based on the data that is stored in the database
+	Specific			To provide a deeper inside into the data that is stored
+	Measurable			Increasers user satisfaction with the program
+	Achievable			We have the tools and skills required to construct this functionality
+	Relevant			Relevant as it shows summarys of meaningful data
+	Time Constrained	Completed by the 22nd of May
+
+	To complete this requries... (assuming data has been imported, put as a prerequisite)
+
+	4.1 Develop code that allows Optimus to get relevant data from the database (for summaries)
+	4.2 Data returned will be summarised
+	4.3 Display data summary to the user
+	
+
+
+5 A user (with permission) is able to manipulate the data stored in the database
+	Specific			To give flexibility to the data allowing the user to have more functionailty on Optimus
+	Measurable			Customer satisfaction with product as they do not just view data, they can use it as a tool to edit data (handy for project managers)
+	Achievable			We have the tools and skills required to construct this functionality
+	Relevant			This s a requirement given by the client meaning it is neccesary to include within Optimus
+	Time Constrained	Completed by the 22nd of May
+
+	To complete this requries... (assuming data has been imported, put as a prerequisite)
+
+	5.1 User enters query which gets translated into a request for specific data from the DB
+	5.2 The data is returned and user makes changes (resends new data)
+	5.3 New data is inserted into database replacing the previous data.
