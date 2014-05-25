@@ -1,0 +1,12 @@
+Mail Parsing Test Suite
+
+
+WordCloud Testing utilised a known test string and passed this to the function responsible for hashing the text and determining the ‘word weightings’ for use on a front-end graphical word cloud.
+If the output expected resulted in the words found in the common words list and the main words correctly outputting the number of words in that string, then the test was considered passed and completed.
+
+Mail Insert testing tested a number of elements associated with the storing of the mail metadata. 
+The ‘creatortest’ function tested whether or not the database could be correctly created to the schema required. It did this by utilising the create function (that the parser also uses) and testing whether it could insert test values. If an exception was thrown, the test was considered failed since it would mean the basic insert statement could not recognise the ‘mails’ table.
+
+The Author parsing aspect of the test suite tested a variety of email formats, and utilised the function from the parser that would split the username away from the entire address. This address parsing tool would split it from addresses with and without ‘@‘ symbols as well as having the users full name in the address. a number of test values all with the same username were tested against, and if the resulting function did not provide the same result then the test was considered failed.
+
+The final test was the insert test. This test was created to see if the data was correctly inserted into the table. utilising a fake email, the mail function would parse the text and insert the specific data into the table. This test function would then create the table, insert the values and then query the table. If the response did not produce the expected output, then it was considered failed and the program would then exit.
