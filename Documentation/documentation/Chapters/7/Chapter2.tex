@@ -10,94 +10,122 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Product perspective}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 1
-%----------------------------------------------------------------------------------------
-
-\subsection{System Interfaces}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 2
-%----------------------------------------------------------------------------------------
-
-\subsection{User Interfaces}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 3
-%----------------------------------------------------------------------------------------
-
-\subsection{Hardware Interfaces}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 4
-%----------------------------------------------------------------------------------------
-
-\subsection{Software Interfaces}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 5
-%----------------------------------------------------------------------------------------
-
-\subsection{Communication Interfaces}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 6
-%----------------------------------------------------------------------------------------
-
-\subsection{Memory Constraints}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 7
-%----------------------------------------------------------------------------------------
-
-\subsection{Operations}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1 SUBSECTION 1
-%----------------------------------------------------------------------------------------
-
-\subsection{Site Adaptation Requirements}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
+\section{Product perspective}
+
+Currently there is no existing dashboard system so we are working solely off the requirements and feedback from the user. As there is already a central data store which is provided by the SVN archives we have a localised store of raw information. This information in its raw form is hard to manage and relate unless you are heavily involved with the project and know the design of the data store or have a working knowledge of data repositories. Thus making it hard for those not directly involved with the project to track the status of the project and managing the correspondence such as bug reports, update logs and emails sent to the developers.
+
+From this there is the need to centralise the supporting data for the projects and our system aims at extracting the raw data into a dashboard which will be in a more easily interpretable format and represent the project’s information better.
+
+\subsection{System structure}
+
+	The system structure can be broken down into the following components:
+	%----------------------------------------------------------------------------------------
+	%	SECTION 1 SUBSECTION 1
+	%----------------------------------------------------------------------------------------
+
+	\begin{description}
+	\item{\emph{Web Application}} \hfill \\ This component encompasses the entire system, including the database and the web server running the application
+	\begin{description}
+	\item{\emph{Database} \hfill \\ The database stores all persisent data related to the application, including the users, the imported data, the mail, the issues. It is only accessed through the back end of the application and parses data in a JSON or CSV format for the front end of the application to interpret into visual forms.
+	\end{description}
+	\item{\emph{Browser}} \hfill \\ This is a application that will run on the users device and it displays the applications HTML response resulting fromm the users interactions
+		\end{description}
+
+\subsection{System Interfaces}
+	
+	The system will implement a graphical user interface that is accessble through a web browser. The user interfaces must be easy to use in order to allow new users to quickly understand and use the system.
+
+\subsection{Hardware Interfaces}
+
+	Client side, the system will run through the web browser, so if the users hardware system supports a browser it should support the system. System side, the system is running on a server in order to run the queries, store the data and send the HTML response to the client.
+
+\subsection{External System Interfaces}
+
+	\begin{itemize}
+		\item The system is able to import data from the python.org system
+	\end{itemize}
+
+\subsection{Communications Interfaces}
+	\begin{itemize}
+		\item The web server and the database server are seperate servers within the same local network
+		\item The web servr will communicate to the database server over TCP/IP
+		\item The client must communicate with the Web Server over TCP/IP connection using HTTP/1.1
+	\end{itemize}
+
+\subsection{Operations}
+The Dashboard system must be easy for all users to use, e.g. no specific information or skills (except knowledge on how to access the Internet via Web browser) must be required to use the tool.
+The Charting and Data representation must be concise and easy to interpret for people with a decent knowledge of different charting styles.
+The Web Server installation and maintenance should be simple enough for a network administrator to perform and should not require any special technical skills from the administrator.
+The Database Server should be able to import data from the SVN. Backup and Recovery operations must be specified in case of network failure, database failure, out of power etc.
+
+
 \section{Product Functions}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+The users for the system, the developers and stakeholders on the python project already have systems in place for mail, issues and for the system itself. However they do not interact directly, making the task of keeping track of work and progress difficult and requiring more time and resources then it should. 
 
+The system is created to solve this problem, by providing the core functionality of visualising and maniputating the data importing from the three existing systems.
+
+The main functions of the system include:
+
+\begin{itemize}
+	\item Interpreting raw system data and parsing it into the database
+	\item Visualising the systems data including
+		\begin{itemize}
+			\item Email
+			\item Discussions
+			\item Issues
+			\item Execution logs
+			\item Commit logs
+			\item Real world user feedback
+			\item Progress
+		\end{itemize}
+	\item Adding and maniputating the data already in the system
+	\item Managing users in the system
+\end{itemize}
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 
 \section{User Characteristics}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
-
+\begin{description}
+	\item{\emph{Administrators}} \hfill \\ Can change and edit any information on the system using the interface. Is also able to install and maintain the Dashboard system.
+	\item{\emph{Guest}} \hfill \\ Can view any information on the system using the interface.
+	\item{\emph{Registered User}} \hfill \\ Users who have signed up for the server. They will be able to create and maniputer data.
+\end{description}
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\section{Constraints, Assumptions and Dependencies}
+\section{Constraints}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+The system shall strickly obey and satisify the following constraints:
+
+
+\begin{description}
+	\item{\emph{Authentication security}} \hfill \\ The system shall obey and enforce user authentication security.
+	\item{\emph{Access Control}} \hfill \\ The system shall provide appropriate access right and user interface to each type of user.
+	\item{\emph{Backup and recovery}} \hfill \\ The backup and recovery of all system's database must be easy to perform in order to perform.
+	\item{\emph{Delivery}} \hfill \\ THe system along with its accomdating documention shall be delivered by the 26th of May 2014.
+	\item{\emph{Integrity}} \hfill \\ The system has a number of users as well as being based off a live site, controls must be put into place to ensure data integrity is permitted
+	\item{\emph{Internet Connection}} \hfill \\ The system fetches the data for the database over the Internet, and because of this a constaint internet connection is required
+\end{description}
+
+\section{Assumptions and Dependencies}
+
+The following assumptions and dependencies for the system are stated:
+
+\begin{itemize}
+	\item All of the potential users of the system will have a unique email address
+	\item All of the potential users of the system will have a stable internet connection
+	\item All of the potential users of the system must have a modern internet browser installed
+	\item All of the potential users of the system will understand basic website navigation
+	\item All of the potential users of the system will be able to read interpreted data.
+\end{itemize}
+
