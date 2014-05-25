@@ -1,0 +1,136 @@
+% Chapter Template
+
+\chapter{Risk Summary} % Main chapter title
+
+\label{PartChapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Part \ref{Part4} \nameref{Part4} Chapter \ref{Part4Chapter2}. \emph{\nameref{Part4Chapter2}}} % Change X to a consecutive number;
+
+\section{Objective 1}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Objective:} & The software is capable of retrieving the Python SVN data to store within a database \\
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Specific} & To allow the program to access to the locally stored data\\ \hline
+        \textbf{Measurable} & To reduce the time it takes to load the data and avoiding constant connection to the SVN to find data. \\ \hline
+        \textbf{Achievable} &  We have the tools and skills required to construct this functionality\\ \hline
+        \textbf{Relevant} & Yes, the client specifies importing data as a requirement and is relevant for our software to be a success  \\ \hline
+        \textbf{Time Constrained} & This should be completed within the first couple of weeks of development so we have time to implement other functionalities \\ \hline
+    \end{tabularx}
+\end{table}
+\subsection{Sub-Objectives}
+
+	\begin{itemize}
+		\item Setup database
+		\item Develop web scraper to find information within emails and bugs
+		\item Implement scraper in final software to enable data import to the database
+	\end{itemize}
+
+\section{Objective 2}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Objective:} & The user can log in to the system and view relevant data relating to their profile \\
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Specific} & Give the user a better experience with the software as the data is personalised on the user logged in\\ \hline
+        \textbf{Measurable} & To increase the number of people using the software as are left with a good experience \\ \hline
+        \textbf{Achievable} &  It is achievable to construct a log in system and user profiles\\ \hline
+        \textbf{Relevant} & Yes, the client specifies importing data as a requirement and is relevant for our software to be a success  \\ \hline
+        \textbf{Time Constrained} & This should be achieved after data has been imported and to take about a week to implement (5th May) \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{Sub-Objectives}
+	\begin{itemize}
+		\item User having an account on the system
+		\item Query specific data based on the logged in user
+		\begin{itemize}
+			\item Analyse user and calculate source code contribution
+		\end{itemize}
+		\item Return data from DB showing user related data
+	\end{itemize}
+
+\section{Objective 3}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Objective:} & The user can view visualisations of bug reports and mail logs from the data stored in the database \\
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Specific} & To allow simple, clean and aesthetic viewing of meaningful data that the user queries\\ \hline
+        \textbf{Measurable} & To encourage further use of the system as it is simple and visually aesthetic whilst providing the information needed\\ \hline
+        \textbf{Achievable} &  It is achievable to create graphs and such to visualise the requested data by the user as we have the tools, skills and time required\\ \hline
+        \textbf{Relevant} & Visualising the data to the user is a core requirement for the system  \\ \hline
+        \textbf{Time Constrained} & This should be achieved after data has been imported and to take about a week to implement (5th May) \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{Sub-Objectives}
+	\begin{itemize}
+		\item User Query to data that user is requesting
+		\item Optimus accesses data from DB
+		\item Optimus converts that data into graphs
+	\begin{itemize}
+		\item Implement a visualisation tool to show graphs
+	\end{itemize}
+	\end{itemize}
+
+
+\section{Objective 4}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Objective:} & The user can view statistics based on the data that is stored in the database \\
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Specific} & To provide additional use of the \\ \hline
+        \textbf{Measurable} & To further satisify the user of the system as it is simple and visually aesthetic whilst providing the information needed\\ \hline
+        \textbf{Achievable} &  The functionality is already implemented in the system from previous objectives\\ \hline
+        \textbf{Relevant} & Aggregating the data stored in the data, this is also a system requirements  \\ \hline
+        \textbf{Time Constrained} & Due to this relying on other project objectives this system needs to be completed by the 22nd of May \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{Sub-Objectives}
+
+	\begin{itemize}
+		\item Develop code that allows the system to get relevant data from the database
+		\item Data returned will be summarised
+		\item Display data summary to the user
+	\end{itemize}
+
+\section{Objective 5}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Objective:} & A user (assuming they have permission) is able to manipulate the data stored in the database \\
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{| l | X |}
+        \hline
+        \textbf{Specific} & To give flexibility to the data allowing the user to have more maniputate on the system\\ \hline
+        \textbf{Measurable} & Customer satisfaction with product as they do not just view data, they can use it as a tool to edit data (handy for project managers)\\ \hline
+        \textbf{Achievable} &  The functionality is already implemented in the system from previous objectives\\ \hline
+        \textbf{Relevant} &  This was a feature requi \\ \hline
+        \textbf{Time Constrained} & Due to this relying on other project objectives this system needs to be completed by the 22nd of May \\ \hline
+    \end{tabularx}
+\end{table}
+
+\subsection{Sub-Objectives}
+
+	\begin{itemize}
+		\item User enters query which gets translated into a request for specific data from the DB
+		\item The data is returned and user makes changes (resends new data)
+		\item New data is inserted into database replacing the previous data.
+	\end{itemize}
