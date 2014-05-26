@@ -8,3 +8,5 @@ A separate ruby method also runs against the entire Month’s mail archive in or
 After the final file has been read it looks to another script that queries the database for information regarding number of emails per user, number of emails per subject, splitting the information up by year and month.
 After decompression and parsing the GZip files are moved to a different directory to signal to the program that the file has already been entered into the database.
 The modular nature of this design allows for easy additions, as well as new and improved queries being added to the files. Allowing modifications of the amount of information gathered by modifying the command line arguments allows future modifications and addition of data.
+
+In the case of the Bugs import, Wombat web-crawler was able to pass over the site, and draw in the issues data, as well as the meta-data surrounding the users. Utilising ruby on rails, this data is passed to the front-end for interpretation and visualisation.
