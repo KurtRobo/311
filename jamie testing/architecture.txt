@@ -1,5 +1,12 @@
+front-end
+The front end pulls JSON files from the back-end server and passes them using PHP and AJAX queries. Utilising bootstrap visualisation library and website template, the JSON data can be displayed graphically, allowing a fully customisable but seamless interface. This segmented design means that minor upgrades can occur over a long period of time, that will mean an eventual different product could potentially be created to serve the community at large
+
+
+Back-End
 A singular script runs against the stored mail data, such that it parses and splits the information in to smaller manageable items which are then loaded into the database. The system starts by decompressing one month’s worth of mail data, splitting the file into individual parts and importing the data into an SQLite database table. This Ruby script traverses the files surrounding it looking for GZip files to decompress and import, but only if they are from the a year equal to, or less than the second command line argument offered.
 A separate ruby method also runs against the entire Month’s mail archive in order to create a list of words and how many times they’ve been used. These word weightings are stored in a JSON file to be interpreted by the front-end webspace to create a word-cloud. The word-cloud will output a set amount of words, which are determined by the first command-line argument.
 After the final file has been read it looks to another script that queries the database for information regarding number of emails per user, number of emails per subject, splitting the information up by year and month.
 After decompression and parsing the GZip files are moved to a different directory to signal to the program that the file has already been entered into the database.
 The modular nature of this design allows for easy additions, as well as new and improved queries being added to the files. Allowing modifications of the amount of information gathered by modifying the command line arguments allows future modifications and addition of data.
+
+In the case of the Bugs import, Wombat web-crawler was able to pass over the site, and draw in the issues data, as well as the meta-data surrounding the users. Utilising ruby on rails, this data is passed to the front-end for interpretation and visualisation.
